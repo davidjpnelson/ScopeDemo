@@ -1,2 +1,14 @@
-package PACKAGE_NAME;public class ScopeDemo {
+public class ScopeDemo {
+
+  public static void main(String[] args) {
+    int x;
+    x = 10;
+    if (true) {
+      int y = 20;
+      System.out.println("x and y:" + x + " " + y);
+      x = y * 2;
+      System.out.println(("x:" + x));
+    }
+    System.out.println("x is still:" + x);
+  }
 }
